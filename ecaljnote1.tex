@@ -7,6 +7,7 @@
 %\documentclass[aps,prl,twocolumn,superscriptaddress,showpacs]{revtex4}
 %\documentclass[aps,prb,preprint,superscriptaddress,showpacs]{revtex4}
 
+\usepackage{doi}
 \usepackage{graphicx}% Include figure files
 \usepackage{longtable}
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -260,9 +261,9 @@ here xxxxxxxxxxxxxxx\\ #1 \\ xxxxxxxxxx to here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\
 \def\DEe{{\it \Delta} E_{\rm e}}
 
 
-\bibliographystyle{apsrev4-1}
+%\bibliographystyle{alpha}
 \setlength{\topmargin}{-10mm}
-\setlength{\textwidth}{120mm}
+\setlength{\textwidth}{140mm}
 \setlength{\textheight}{240mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -296,7 +297,7 @@ Then we explain how to implement the quasi-particle
 self-conisistent GW (QSGW) method in the PMT method.
 A key point is in how to repsesent static version of the self-energy 
 in the IBZ.\\
-
+ 
 この文書は、おもにpmttheory.tex（未発表：kotani,kino,and akai)に解説した理論をもとに、
 PMT法（MTOとAPWによる混合基底の方法）とPMT-QSGW法（PMT法をもとにしたQSGW
 法、さらには電荷ゆらぎなど）がいかに実装されているかを記述するものである。\\
@@ -368,19 +369,19 @@ no other mixed basis methods have used different kinds
 of augmented waves simultaneously in the full-potential methods.
 
 A minimum description on the formalism of the PMT method is given in Ref.\cite{pmt1}, 
-which is based on Ref.\cite{lmfchap} for a LMTO method  
+which is based on Ref.\onlinecite{lmfchap} for a LMTO method  
 by Methfessel et al. However, the formalism was not very transparent, 
 mainly because it was not derived from the explicit total energy minimization.
 This makes theoretical treatment of the PMT method somehow complicated.
 For example, it resulted in a complicated logic to derive atomic forces 
-in Refs.\cite{molforce,lmfchap}. 
+in Refs.\onlinecite{molforce,lmfchap}. 
 %Since we are afraid of
 %the Pulay terms \cite{pulay69}, it should be derived from the derivative
 %of total energy. 
 It was not easy to compare the PMT method with the projector augmented
 wave (PAW) methods \cite{PAW,kresse99} on the same footing.
 Thus we should give a simple and clear formalism to the PMT method 
-for its further developments rather than that in Refs.\cite{pmt1,lmfchap}.
+for its further developments rather than that in Refs.\onlinecite{pmt1,lmfchap}.
 
 In this paper, we introduce a formalism, named as the 3-component
 formalism, which is a mathematically transparent generalization of the additive
